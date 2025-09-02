@@ -1,0 +1,26 @@
+Find the Number of Ways to Place People:
+
+You are given a 2D array (points) of size (n * 2) representing integer coordinates of some points on a 2D plane, where (points[i] = [xi, yi]).
+
+Count the number of pairs to point (A, B), where :
+    - A is on the upper left of B
+    - There is no other points in the rectangle (or line) they make (including the border)
+
+Return the Count
+
+Examples:
+
+1.  Points = [ [1,1] [2,2], [3,3] ]
+    Output = 0
+
+2.  Points = [ [6,2], [4,4], [2,6] ]
+    Output = 2
+
+3.  Points = [ [3,1], [1,3], [1,1] ]
+    Output = 2
+
+Constraints:
+    - 2 <= n <= 50
+    - points[i].length == 2
+    - 0 <= points[i][0], points[i][1] <= 50
+    - all points[i] are distinct

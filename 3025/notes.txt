@@ -1,0 +1,13 @@
+1. In order to assume that a point is to the upper left we must assume that:
+    - point[i][0] >= point[j][0]
+    - point[j][1] <= point[j][1]
+
+2. If true we then need to determine if any points are within the rectangle. We can determine this if:
+    - point[i][0] >= point[x][0] >= point[j][0]
+    - point[i][1] <= point[x][1] <= point[j][1]
+
+A pair is found if conclusion 2 is valid (conclusion 1 is included in conclusion 2)
+
+Things to consider:
+    - All the examples have only 3 points, however this is not guarenteed in the solution
+    - Compare each point to eachother, requiring a nested for loop
