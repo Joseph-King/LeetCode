@@ -1,0 +1,7 @@
+Requirements:
+    - Determine if a fence can be built
+        - YES - Build fence and determine if someone else is on or in fence
+        - NO - FALSE
+
+A point is an Alice point if:
+    - Another point is to the right (or same x value) of the current point and not above

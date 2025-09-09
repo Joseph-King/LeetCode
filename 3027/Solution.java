@@ -18,7 +18,7 @@ public class Solution {
                     continue;
                 }
 
-                if(points[i][0] >= points[j][0] && points[i][1] <= points[j][1] && isNotWithinPair(points, i, j)){
+                if(points[i][0] <= points[j][0] && points[i][1] >= points[j][1] && isNotWithinPair(points, i, j)){
                     pairs++;
                 }
             }
@@ -33,7 +33,7 @@ public class Solution {
                 continue;
             }
 
-            if(points[x][0] <= points[i][0] && points[x][0] >= points[j][0] && points[x][1] >= points[i][1] && points[x][1] <= points[j][1]){
+            if(points[x][0] >= points[i][0] && points[x][0] <= points[j][0] && points[x][1] <= points[i][1] && points[x][1] >= points[j][1]){
                 return false;
             }
         }
