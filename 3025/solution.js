@@ -34,6 +34,6 @@ var case1 = [ [1,1], [2,2], [3,3] ]
 var case2 = [ [6,2], [4,4], [2,6] ]
 var case3 = [ [3,1], [1,3], [1,1] ]
 
-console.log(numberOfPairs(case1))
-console.log(numberOfPairs(case2))
-console.log(numberOfPairs(case3))
+console.log("Result: " + numberOfPairs(case1))
+console.log("Result: " + numberOfPairs(case2))
+console.log("Result: " + numberOfPairs(case3))
